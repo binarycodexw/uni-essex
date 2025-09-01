@@ -2,6 +2,20 @@
 
 ---
 
+### Approach to Modeling Transactions and Handling Calculations
+
+For this assignment, I chose a simple and straightforward approach using basic Python concepts. The main data structure is a **global list called `transactions`** that stores dictionaries, where each dictionary represents one financial transaction with four key pieces of information: type (income or expense), category, amount, and date.
+
+This approach was selected because it's easy to understand and manipulate - when users enter new transactions, I simply create a new dictionary and append it to the list using `transactions.append()`. 
+
+For **calculations**, I implemented dedicated functions that iterate through the transaction list using basic `for` loops. The `calculate_totals()` function separates income from expenses using simple `if-else` statements, while `find_high_low_expenses()` uses manual category counting with separate variables for each category (rent_total, food_total, other_total).
+
+**Input validation** is handled with `while` loops and `try-except` blocks to ensure users enter valid data. The program uses string concatenation with `str()` function for output formatting.
+
+
+
+---
+
 ## Python Code
 
 ```python
@@ -325,17 +339,6 @@ while True:
 
 ---
 
-### Approach to Modeling Transactions and Handling Calculations
-
-For this assignment, I chose a simple and straightforward approach using basic Python concepts. The main data structure is a **global list called `transactions`** that stores dictionaries, where each dictionary represents one financial transaction with four key pieces of information: type (income or expense), category, amount, and date.
-
-This approach was selected because it's easy to understand and manipulate - when users enter new transactions, I simply create a new dictionary and append it to the list using `transactions.append()`. 
-
-For **calculations**, I implemented dedicated functions that iterate through the transaction list using basic `for` loops. The `calculate_totals()` function separates income from expenses using simple `if-else` statements, while `find_high_low_expenses()` uses manual category counting with separate variables for each category (rent_total, food_total, other_total).
-
-**Input validation** is handled with `while` loops and `try-except` blocks to ensure users enter valid data. The program uses string concatenation with `str()` function for output formatting.
-
----
 
 ## Sample Program Output
 
