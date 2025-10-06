@@ -20,7 +20,7 @@ The Golden Key Adventure is a text-based adventure game made with Python. In it,
 
 #### The Architecture of the Game World
 
-The rooms in the castle are connected by nested dictionaries. Players start at the entrance and can go to the great hall, which is the main area that connects to the other areas. There are three ways to go from the great hall: north to the library (which has a hidden trap), east to the armory (which has weapons and shields), or straight ahead to the treasure room, where the Golden Key is. Players won't get stuck because all the rooms connect to each other.
+The rooms in the castle are connected by nested dictionaries. Players start at the entrance and can go to the great hall, which is the main area that connects to the other areas. There are two ways to go from the great hall: north to the library (which has a hidden trap) or east to the armory (which has weapons and shields). The treasure room, where the Golden Key is located, can be reached from either the library (going east) or from the armory (going north). Players won't get stuck because all the rooms connect to each other.
 
 #### Important Functions
 
